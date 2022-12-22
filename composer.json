@@ -1,0 +1,22 @@
+{
+    "name": "integrity/tivoli",
+    "description": "PHP Docker Development Enronment",
+    "version": "0.0.1",
+    "type": "library",
+    "require": {
+        "symfony/console": "^6.1",
+        "squizlabs/php_codesniffer": "^3.6",
+        "fakerphp/faker": "^1.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "require-dev": {
+    },
+    "bin": [
+        "bin/tivoli"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Integrity\\Tivoli\\": "src/"
+        }
+    }
+}
