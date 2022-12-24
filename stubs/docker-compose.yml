@@ -31,13 +31,14 @@ services:
     command: "./vendor/bin/phpcbf --standard=PSR12 ./src"
   docs:
     container_name: docs
-    image: php:apache
+    build:
+      dockerfile: ./vendor/integrity/tivoli/runtimes/php/Dockerfile
     depends_on:
       - generatephpdoc
       - unittest
     ports:
       - 8088:80
     volumes: 
-      - ./build/docs:/var/www/html:rw
+      - ./build/docs:/var/www/html/docs:rw
     profiles: ["docs"]
   
