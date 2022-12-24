@@ -10,6 +10,7 @@ RUN pecl install \
 
 # Configure php
 RUN echo "date.timezone = UTC" >> /usr/local/etc/php/php.ini
+RUN echo "zend_extension=xdebug" >> /usr/local/etc/php/php.ini
 
 ENV XDEBUG_MODE=coverage 
 

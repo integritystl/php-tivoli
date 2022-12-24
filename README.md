@@ -37,7 +37,7 @@ docker-compose run generatephpdoc
 This is used to easily view the documentation and reports. When running this it will also generate the documentaion, unit test report, and the code standards report. To update those you can either stop the server and restart, or you may regenerate each report manually.
 
 ```sh
-docker-compose --profile docs up
+docker-compose --profile docs up -d
 ```
 
 You can view the reports at <http://localhost:8088>
