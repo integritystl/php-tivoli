@@ -9,7 +9,6 @@ services:
       - ./:/project:rw
   phpdoc:
     &phpdoc
-    container_name: phpdoc
     image: phpdoc/phpdoc:latest
     volumes:
       - ./:/data:rw
